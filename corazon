@@ -25,6 +25,9 @@
       margin-top: 20px;
       transform: rotate(-45deg);
       animation: beat 1.5s infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .heart::before,
@@ -48,13 +51,13 @@
     }
 
     .message {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: rotate(45deg) translate(-50%, -50%);
+      position: relative;
       text-align: center;
       font-size: 14px;
       width: 140px;
+      color: #ffeb3b; /* Color amarillo para que resalte */
+      line-height: 1.4;
+      transform: rotate(45deg); /* Rotación solo del texto */
     }
 
     @keyframes beat {
@@ -70,13 +73,10 @@
 <body>
   <div class="heart">
     <div class="message">
-      TE AMO MUCHO<br>
-      ERES EL AMOR DE MI VIDA<br>
-      GRACIAS POR TODO LO QUE HACES POR MI<br>
-      NO OLVIDES QUE SIEMPRE ESTARÉ A TU LADO<br>
-      JUNTOS PODREMOS SOLUCIONARLO TODO<br>
-      MI HERMOSA OJITOS PRECIOSOS
+      NO OLVIDES QUE ERES MUY IMPORTANTE PARA MI<br>
+      OJITOS HERMOSOS, RECUERDA QUE TE AMO Y MUCHO MI AMOR
     </div>
   </div>
 </body>
 </html>
+
