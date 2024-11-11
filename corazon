@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corazón Animado</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .heart {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      margin-top: 20px;
+      transform: rotate(-45deg);
+      animation: beat 1.5s infinite;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -100px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: 100px;
+      top: 0;
+    }
+
+    .message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: rotate(45deg) translate(-50%, -50%);
+      text-align: center;
+      font-size: 14px;
+      width: 140px;
+    }
+
+    @keyframes beat {
+      0%, 100% {
+        transform: scale(1) rotate(-45deg);
+      }
+      50% {
+        transform: scale(1.1) rotate(-45deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="heart">
+    <div class="message">
+      TE AMO MUCHO<br>
+      ERES EL AMOR DE MI VIDA<br>
+      GRACIAS POR TODO LO QUE HACES POR MI<br>
+      NO OLVIDES QUE SIEMPRE ESTARÉ A TU LADO<br>
+      JUNTOS PODREMOS SOLUCIONARLO TODO<br>
+      MI HERMOSA OJITOS PRECIOSOS
+    </div>
+  </div>
+</body>
+</html>
